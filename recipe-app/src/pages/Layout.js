@@ -11,6 +11,9 @@ function Layout() {
           <li>
             <Link to="/about">About</Link>
           </li>
+          <li>
+            <Link to="/my_recipes">My Recipes</Link>
+          </li>
         </ul>
       </nav>
 
