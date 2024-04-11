@@ -1,3 +1,6 @@
+// functionality copied from todo-list example with elements renamed as recipe and recipes
+// doesn't save when you leave the page -- not sure how to remedy this
+
 import { useState } from "react";
 
 function MyRecipes() {
@@ -20,10 +23,10 @@ function MyRecipes() {
     };
 
     return (
-        <div className="app">
+        <div className="section">
             <h1>My Recipes</h1>
 
-            <div className="input-wrapper">
+            <>
                 <input 
                     type="text" 
                     name="recipe" 
@@ -34,7 +37,7 @@ function MyRecipes() {
                     }}
                 />
                 <button className="add-button" onClick={addRecipe}>Add</button>
-            </div>
+            </>
 
             <>
             {recipes?.length > 0 ? (
