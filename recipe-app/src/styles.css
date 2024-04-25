@@ -2,6 +2,27 @@
     box-sizing: border-box;
 }
 
+.recipe {
+    padding: 25px;
+}
+
+.recipe-list {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.section {
+    margin: auto;
+    text-align: center;
+    }
+
+.App {
+    text-align: center;
+}
+
 body {
     margin: 0;
 }
