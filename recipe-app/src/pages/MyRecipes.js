@@ -1,6 +1,7 @@
 // functionality copied from todo-list example with elements renamed as recipe and recipes
 // doesn't save when you leave the page -- not sure how to remedy this
 
+import RecipeBox from "../components/RecipeBox"
 import { useState } from "react";
 
 function MyRecipes() {
@@ -44,7 +45,10 @@ function MyRecipes() {
                 <ul className="recipe-list">
                     {recipes.map((recipe, index) => (
                     <div className="recipe">
-                        <li key={index}> {recipe} </li>
+                        <RecipeBox 
+                            recipeName={recipe}
+                        />
+                        {/* <li key={index}> {recipe} </li> */}
 
                         <button 
                         className="delete-button"

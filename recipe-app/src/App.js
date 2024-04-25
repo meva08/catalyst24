@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import MyRecipes from "./pages/MyRecipes";
 import {Routes, Route} from "react-router-dom";
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
